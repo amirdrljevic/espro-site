@@ -1,0 +1,91 @@
+@import "variables";
+
+.top-header-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-blue;
+    height: 37px;
+    
+    .content-wrapper {
+      max-width: $content-max-width; 
+      margin: 0 auto;  // Horizontal centering
+    }
+  
+    .promo-text {
+      display: block; 
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 11px;
+      width: 100%;
+      text-align: center;
+      color: $white-text-color;
+      text-decoration: none; 
+    }
+}
+
+.navigation-menu {
+    height: 66px;
+}
+
+.custom-navbar {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left-menu, .center-logo, .right-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-menu {
+        flex: 2.5; // Give more space for left menu
+        justify-content: flex-start;
+    }
+
+    .center-logo {
+        flex: 1; // Center logo takes only the space it needs
+    }
+
+    .right-menu {
+        flex: 2; // Give more space for right menu
+        justify-content: flex-end; 
+    }
+
+    .navbar-brand {
+        margin: 0 2rem; // Space around the logo
+    }
+
+    .nav-link {
+        margin: 0 1rem; 
+        color: $primary-text-color;
+        text-decoration: none;
+        font: normal normal bold 16px 'Josefin Sans', sans-serif; 
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .nav-link-icon {
+        margin: 0 0.5rem; 
+    }
+
+    .nav-link-counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px; 
+        height: 24px; 
+        border-radius: 50%; 
+        background-color: $light-blue;
+        color: $white-text-color;
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken($light-blue, 10%);
+        }
+    }
+}
