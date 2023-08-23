@@ -1,0 +1,31 @@
+<header class="top-header-row">
+  <div class="content-wrapper">
+    <a class="promo-text" href="#">FREE SHIPPING ON ALL U.S. ORDERS $49+</a>
+  </div>
+</header>
+<div class="container navigation-menu">
+  <nav class="navbar custom-navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <div class="flex-container">
+        <div class="left-menu navbar-nav">
+          <a class="nav-link" href="#">SHOP</a>
+          <a class="nav-link" href="#">OUR STORY</a>
+        </div>
+        <%= link_to image_tag("ESPRO Logo.svg"), root_path, class: "navbar-brand"%>
+        <div class="right-menu navbar-nav">
+          <a class="nav-link" href="#">BREW GUIDES</a>
+          <a class="nav-link" href="#">BLOG</a>
+        </div>
+      </div>
+      <div class="icons navbar-nav">
+        <%= link_to image_tag("search-line.svg"), '#', class: "nav-link-icon"%>
+        <%= link_to image_tag("My Account icon.svg"), '#', class: "nav-link-icon"%>
+        <%= link_to image_tag("Shopping bag icon.svg"), '#', class: "nav-link-icon"%>
+        <a class="nav-link-counter" href="#">0</a>
+      </div>
+    </div>
+  </nav>
+</div>
