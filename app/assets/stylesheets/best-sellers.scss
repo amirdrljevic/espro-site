@@ -1,0 +1,46 @@
+@import "variables";
+
+.best-sellers {
+  background-color: $bg-color;
+  padding: $padding-vertical-50 0;
+  text-align: center;
+
+  .titles {
+    margin-bottom: 30px;
+
+    .top-title {
+      font: normal normal bold 12px/25px Josefin Sans;
+      margin-bottom: $margin-bottom;
+      color: $primary-text-color;
+    }
+
+    .main-title {
+      font: normal normal bold 40px/50px Barlow Condensed;
+      color: $primary-text-color;
+      margin-bottom: $margin-bottom;
+    }
+  }
+
+  .products {
+    display: flex;
+    justify-content: space-between;
+    max-width: $content-max-width;
+    margin: 0 auto;
+
+    .product-image {
+      flex: 0 0 calc(25% - 30px);
+      margin-right: 20px;
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: translateY(-7px);  // Shift upwards on hover.
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
+      }
+    }
+  }
+}
