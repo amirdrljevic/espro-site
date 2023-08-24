@@ -1,24 +1,51 @@
-# README
+# ESPRO web page 🦸
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project transforms a design from Adobe XD file into a functional web page using HTML, CSS, and JS.
 
-Things you may want to cover:
+![ESPRO Logo](app/assets/images/ESPRO Logo.svg)
 
-* Ruby version
+## Table of Contents
 
-* System dependencies
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [Styling Guide](#styling-guide)
 
-* Configuration
+## Features
 
-* Database creation
+- **Several sections of the page**: There are header, hero, best seller and life coffee sections
+- **HTML**: The design is reflecting the XD design
+- **CSS**: SCSS is used to separate the styling into more manageable pieces
 
-* Database initialization
+## Setup Instructions
 
-* How to run the test suite
+1. **Clone the repository**:
 
-* Services (job queues, cache servers, search engines, etc.)
+   ```bash
+   git clone https://github.com/amirdrljevic/espro-site.git
+   cd espro-site
+   ```
 
-* Deployment instructions
+2. **Install dependencies**:
 
-* ...
+   Make sure you have Ruby and Rails 7 installed. Then,
+
+   ```bash
+   bundle install
+   ```
+
+3. **Start the Rails server**:
+
+   ```bash
+   rails server
+   ```
+
+   Visit `http://localhost:3000` in your browser.
+
+## Styling Guide
+
+Styling is managed through SCSS, ensuring a modern look and feel to the application. The BEM methodology was used along with variables for consistency.
+
+1. **Variables**: All SCSS variables are defined in `variables.scss`. This includes colors, font sizes, and common margins/paddings.
+2. **Custom Styles**: Custom styles can be found in several scss files. This includes component-specific styles and utility classes.
+
+3. **Using Bootstrap**: Bootstrap's grid system and components are used for responsiveness.
