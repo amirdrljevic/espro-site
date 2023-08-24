@@ -1,0 +1,61 @@
+@import "variables";
+
+.life-coffee {
+  background-color: $life-coffee-bg;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  padding: 50px 0;
+
+  .text-section {
+    width: 20%; 
+    text-align: center;
+    margin-bottom: 30px;
+
+    .top-title {
+      font: normal normal bold 12px Josefin Sans;
+      color: $primary-text-color;
+      margin-bottom: 10px;
+    }
+
+    .main-title {
+      font: normal normal bold 48px/52px Barlow Condensed;
+      color: $primary-text-color;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font: normal normal normal 16px/25px Nunito;
+      color: $primary-text-color;
+    }
+  }
+
+  .image-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+
+    .left-images, .right-images {
+      width: 50%; // Half the container width for each set of images
+
+      .parallax-image {
+        max-width: 45%; // Allowing some space between images
+        margin: 2.5%; // Small margin around each image for better distribution
+
+        // Random positioning of the images
+        &:nth-child(1) {
+          margin-top: 15%;
+        }
+
+        &:nth-child(2) {
+          margin-top: 5%;
+        }
+
+        &:nth-child(3) {
+          margin-top: 25%;
+        }
+      }
+    }
+  }
+}
