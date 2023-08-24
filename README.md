@@ -2,8 +2,6 @@
 
 This project transforms a design from Adobe XD file into a functional web page using HTML, CSS, and JS.
 
-![ESPRO Logo](app/assets/images/ESPRO Logo.svg)
-
 ## Table of Contents
 
 - [Features](#features)
@@ -47,5 +45,4 @@ Styling is managed through SCSS, ensuring a modern look and feel to the applicat
 
 1. **Variables**: All SCSS variables are defined in `variables.scss`. This includes colors, font sizes, and common margins/paddings.
 2. **Custom Styles**: Custom styles can be found in several scss files. This includes component-specific styles and utility classes.
-
 3. **Using Bootstrap**: Bootstrap's grid system and components are used for responsiveness.
